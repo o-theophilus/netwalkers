@@ -1,0 +1,118 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+
+	font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+:root {
+	--color1: black;
+	--color2: white;
+	--color3: #182f4e;
+	--color4: #bdbdbd;
+	--color5: #0075c8;
+	--color6: #1aa0ff;
+	--color7: red;
+
+	--gap1: 8px;
+	--gap2: 16px;
+	--gap3: 24px;
+	--gap4: 32px;
+	--gap5: 40px;
+
+	--bRad1: 4px;
+	--bRad2: 8px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+
+	height: 100%;
+	overflow: auto;
+
+	background-color: var(--color3);
+
+	padding: var(--gap5);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap4);
+	align-items: center;
+
+	width: min(100%, 500px);
+	background-color: var(--color2);
+
+	padding: var(--gap5);
+	border-radius: var(--bRad2);
+	margin: auto;
+}
+
+.formTitle {
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.inputArea {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap2);
+
+	width: 100%;
+}
+
+.inputGroup {
+	display: flex;
+	flex-direction: column;
+	gap: var(--gap1);
+}
+
+input {
+	display: block;
+	padding: var(--gap2);
+
+	border: 2px solid var(--color4);
+	border-radius: var(--bRad1);
+	font-size: 1rem;
+}
+input:hover {
+	border-color: var(--color6);
+}
+input:focus {
+	border-color: var(--color7);
+}
+
+input[type="submit"] {
+	background-color: var(--color5);
+	border: none;
+
+	color: var(--color2);
+	font-weight: bold;
+}
+input[type="submit"]:hover {
+	background-color: var(--color6);
+}
+
+a {
+	color: var(--color5);
+	text-decoration: none;
+	font-weight: bold;
+
+	flex-shrink: 0;
+}
+
+.captchaGroup {
+	display: flex;
+	align-items: center;
+	gap: var(--gap2);
+}
+
+.error {
+	color: var(--color7);
+}
