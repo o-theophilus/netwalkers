@@ -35,7 +35,7 @@ main {
 	height: 100%;
 	overflow: auto;
 
-	background-color: var(--color3);
+	background: radial-gradient(#234063, var(--color3));
 
 	padding: var(--gap5);
 }
@@ -43,7 +43,7 @@ main {
 form {
 	display: flex;
 	flex-direction: column;
-	gap: var(--gap4);
+	gap: var(--gap2);
 	align-items: center;
 
 	width: min(100%, 500px);
